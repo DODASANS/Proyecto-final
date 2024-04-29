@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Sequence Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Memory Sequence Game</h1>
+        <p>Remember and repeat the sequence to advance to the next level!</p>
+        <button id="start-button" class="button" onclick="startGame()">Start Game</button>
+        <div id="game-board">
+            <div class="row">
+                <div class="tile" onclick="playerClick(0)"></div>
+                <div class="tile" onclick="playerClick(1)"></div>
+                <div class="tile" onclick="playerClick(2)"></div>
+            </div>
+            <div class="row">
+                <div class="tile" onclick="playerClick(3)"></div>
+                <div class="tile" onclick="playerClick(4)"></div>
+                <div class="tile" onclick="playerClick(5)"></div>
+            </div>
+            <div class="row">
+                <div class="tile" onclick="playerClick(6)"></div>
+                <div class="tile" onclick="playerClick(7)"></div>
+                <div class="tile" onclick="playerClick(8)"></div>
+            </div>
+        </div>
+        <div id="message"></div>
+        <div id="level-display"></div>
+        <div id="best-score" class="hidden">Best Score: 0</div> 
+        <button id="play-again" class="button" onclick="playAgain()">Play Again</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
